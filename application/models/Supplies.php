@@ -111,16 +111,34 @@ class Supplies extends CI_Model {
         }
     }
     
-    // Set the quantity of the supply item
-    public function set_quantity($name, $quantity)
+/**
+     * Sets or modifes the quanitity of a Supply item.
+     * @param type $name The name of the Supply item
+     * @param type $mode Add, Minus, or Equal
+     * @param type $quantity Set the quantity of the Supply item
+     */
+    public function set_quantity($name, $mode, $quantity)
     {
-        // find the correct supply name, set the supply quantity
+        // find the correct supply name, set the quantity
         foreach($this->supplies as $supply)
         {
             if($supply['name'] == $name)
             {
-                $supply['quantity'] = $quantity;
+                // Add, Minus, or Equal the value to the quantity amount.
+                switch($mode)
+                {
+                    case 'add':
+                        $supply['quantity'] += $quantity;
+                        break;
+                    case 'minus':
+                        $supply['quantity'] -= $quantity;
+                        break;
+                    case 'equal':
+                        $supply['quantity'] = $quantity;
+                        break;
+                }
             }
         }
     }
+  
 }

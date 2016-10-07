@@ -84,9 +84,13 @@ class Stocks extends CI_Model {
         }
     }
     
-    // !!!!WIP!!!!
-    // Set the quantity of the Stock item
-    public function set_quantity($mode, $name, $quantity)
+    /**
+     * Sets or modifes the quanitity of a Stock item.
+     * @param type $name The name of the Stock item
+     * @param type $mode Add, Minus, or Equal
+     * @param type $quantity Set the quantity of the Stock item
+     */
+    public function set_quantity($name, $mode, $quantity)
     {
         // find the correct stock name, set the quantity
         foreach($this->stocks as $stock)
@@ -110,7 +114,11 @@ class Stocks extends CI_Model {
         }
     }
     
-    // Set the description of the Stock item
+    /**
+     * 
+     * @param type $name The name of the Stock
+     * @param type $description Set the description of the Stock item
+     */
     public function set_description($name, $description)
     {
         // find the correct stock name, set the description
@@ -122,4 +130,6 @@ class Stocks extends CI_Model {
             }
         }
     }
+    
+    
 }
