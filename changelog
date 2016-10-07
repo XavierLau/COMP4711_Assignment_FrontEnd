@@ -17,3 +17,7 @@ October 6, 2016:
 October 6, 2016:
     - Added Getter and Setter methods to the models.
     - Experimental Setter in Stock model. Discuss with rest of group.
+
+October 7, 2016:
+    - Updated Logs model with mock data and some get methods.
+    - Added a couple of mock pictures to test with.
