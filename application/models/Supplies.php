@@ -14,9 +14,9 @@ class Supplies extends CI_Model {
         array('id' => '2', 'name' => 'Oil', 'description' => 'Oil lubricant to ensure mechanical parts operate smoothly.',
               'price' => '100', 'quantity' => '14100', 'src' => ''),
         array('id' => '3', 'name' => 'Missles', 'description' => 'AIM 120C Missles for Air-to-Air combat.', 
-              'price' => '400000', 'quantity' => '680', 'src' => 'public/assets/img/AIM-120_1.jpg'),
+              'price' => '400000', 'quantity' => '680', 'src' => 'assets/img/AIM-120_1.jpg'),
         array('id' => '4', 'name' => 'Ammo', 'description' => '20mm PGU-28A/B SAPHEI rounds for the F-22\'s M61A2 Cannon.', 
-              'price' => '250', 'quantity' => '53070', 'src' => 'public/assets/img/PGU-28A_1.jpg'),
+              'price' => '250', 'quantity' => '53070', 'src' => 'assets/img/PGU-28A_1.jpg'),
         array('id' => '5', 'name' => 'Rivets', 'description' => 'Rivets for the inner frame of the F-22.', 
               'price' => '350', 'quantity' => '542', 'src' => '')
         );
