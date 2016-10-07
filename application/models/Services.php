@@ -44,4 +44,43 @@ class Services extends CI_Model {
             }
         }
     }
+    
+    // Get an array of supplies that the service needs
+    public function get_supply_list($id)
+    {
+                // find the correct service id, return it
+        foreach($this->services as $service)
+        {
+            if($service['id'] == $id)
+            {
+                return $service['supplies'];
+            }
+        }
+    }
+    
+        // Get the description of the Stock item
+    public function get_description($name)
+    {
+        // find the correct service name, return the description
+        foreach($this->services as $service)
+        {
+            if($service['name'] == $name)
+            {
+                return $service['description'];
+            }
+        }
+    }
+    
+        // Set the description of the Stock item
+    public function set_description($name, $description)
+    {
+        // find the correct service name, set the description
+        foreach($this->services as $service)
+        {
+            if($service['name'] == $name)
+            {
+                $service['description'] = $description;
+            }
+        }
+    }
 }

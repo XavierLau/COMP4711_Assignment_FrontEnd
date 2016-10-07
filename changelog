@@ -13,3 +13,7 @@ October 6, 2016:
     - Added Models for Services, Supplies, and Stock.
     - Added very rough Transaction Log.
     - Added the glorious changelog!
+
+October 6, 2016:
+    - Added Getter and Setter methods to the models.
+    - Experimental Setter in Stock model. Discuss with rest of group.

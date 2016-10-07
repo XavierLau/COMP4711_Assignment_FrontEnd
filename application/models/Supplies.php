@@ -33,7 +33,7 @@ class Supplies extends CI_Model {
         return $this->supplies;
     }
 
-    // Get one supply
+    // Get one supply item
     public function get_one($id)
     {
         // find the correct id, return it
@@ -42,6 +42,84 @@ class Supplies extends CI_Model {
             if($supply['id'] == $id)
             {
                 return $supply;
+            }
+        }
+    }
+    
+    // Get the description of the supply
+    public function get_description($name)
+    {
+        // find the correct supply name, return the supply description
+        foreach($this->supplies as $supply)
+        {
+            if($supply['name'] == $name)
+            {
+                return $supply['description'];
+            }
+        }
+    }
+    
+    // Get the price of the supply
+    public function get_price($name)
+    {
+        // find the correct supply name, return the supply price
+        foreach($this->supplies as $supply)
+        {
+            if($supply['name'] == $name)
+            {
+                return $supply['price'];
+            }
+        }
+    }
+    
+    // Get the quantity of the supply
+    public function get_quantity($name)
+    {
+        // find the correct supply name, return the supply quantity
+        foreach($this->supplies as $supply)
+        {
+            if($supply['name'] == $name)
+            {
+                return $supply['quantity'];
+            }
+        }
+    }
+        
+    // Set the description of the supply item
+    public function set_description($name, $description)
+    {
+        // find the correct supply name, set the supply description
+        foreach($this->supplies as $supply)
+        {
+            if($supply['name'] == $name)
+            {
+                $supply['description'] = $description;
+            }
+        }
+    }
+    
+    // Set the price of the supply item
+    public function set_price($name, $price)
+    {
+        // find the correct supply name, set the supply price
+        foreach($this->supplies as $supply)
+        {
+            if($supply['name'] == $name)
+            {
+                $supply['price'] = $price;
+            }
+        }
+    }
+    
+    // Set the quantity of the supply item
+    public function set_quantity($name, $quantity)
+    {
+        // find the correct supply name, set the supply quantity
+        foreach($this->supplies as $supply)
+        {
+            if($supply['name'] == $name)
+            {
+                $supply['quantity'] = $quantity;
             }
         }
     }
