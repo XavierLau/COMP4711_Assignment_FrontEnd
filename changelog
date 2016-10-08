@@ -34,3 +34,8 @@ October 8, 2016:
 
 October 8, 2016:
     - Added production controller and a temporary page for it
+
+October 8, 2016:
+    - Added receiving controller and a temporary page for it
+    - Fixed some comments in production controller and sales controller
+    - Added a function to the sales controller to view and individual service

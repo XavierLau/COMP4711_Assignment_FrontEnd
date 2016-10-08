@@ -5,39 +5,67 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Sales extends Application
 {
 
-	//sales page
+	/**
+	* The sales controller.
+	* Show a menu of purchaseable items, with description & price for each.
+	*
+	*/
 	public function index()
 	{
 		$this->data['pagebody'] = 'sales';
+		//the supplies
 		$supplies = $this->supplies->get_all();
+		//the stocks
 		$stocks = $this->stocks->get_all();
 
-		$inventory = array();
-
+		//go through supplies
 		foreach ($supplies as $supply)
 		{
+			//add supply info
 			$standalone[] = array('supply' => $supply['name'], 'description' => $supply['description'], 'price' => $supply['price']);
 		}
 		//go through services
 		foreach ($stocks as $stock)
 		{
+			//add service info
 			$bundle[] = array('service' => $stock['name'], 'description' => $stock['description'], 'price' => $stock['price']);
 		}
+		//add both supplies and services
 		$this->data['sales'] = array(array('supplies' => $standalone, 'services' => $bundle));
-		print_r($this->data['sales']);
 		$this->render();
 	}
 
-	//display item page
-	public function item($id)
+	/**
+	* Display an product.
+	* 
+	*
+	*/
+	public function product($id)
 	{
-		$this->data['pagebody'] = 'item';
-		$item = $this->supplies->get_one($id);
-		$this->data = array_merge($this->data, $item);
+		$this->data['pagebody'] = 'product';
+		$product = $this->supplies->get_one($id);
+		$this->data = array_merge($this->data, $product);
 		$this->render();
 	}
 
-	//purchase product
+	/**
+	* Display a service.
+	*
+	*
+	*/
+	public function service($id)
+	{
+		$this->data['pagebody'] = 'service';
+		$services = $this->services->get_one($id);
+		$this->data = array_merge($this->data, $services);
+		$this->render();
+	}
+
+	/**
+	* Updates database with purchases.
+	*
+	*
+	*/
 	public function purchase()
 	{
 		//results returned from POST
