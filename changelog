@@ -21,3 +21,7 @@ October 6, 2016:
 October 7, 2016:
     - Updated Logs model with mock data and some get methods.
     - Added a couple of mock pictures to test with.
+
+October 7, 2016:
+    - Added more mock data. We now have ample amount of materials to display.
+    - Need some more pictures though...
