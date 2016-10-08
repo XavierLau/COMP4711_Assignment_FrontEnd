@@ -31,3 +31,6 @@ October 8, 2016:
     - Removed old homepage and its controller
     - Autoloaded the models
     - Updated some model values
+
+October 8, 2016:
+    - Added production controller and a temporary page for it
