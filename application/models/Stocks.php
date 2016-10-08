@@ -11,22 +11,22 @@ class Stocks extends CI_Model {
     var $stocks = array(
         array('id' => '1', 'name' => 'Preparation Service', 'service' => 'Preparation',
               'description' => 'Load up your F22 with Fuel and Oil to reach Patrol ready status. Cost relates to Price Per Flight Hour.', 
-              'price' => '68362', 'quantity' => '50'),
-        array('id' => '2', 'name' => 'Maintenence Service', 'service' => 'Maintenence',
+              'price' => 68362, 'quantity' => 50),
+            array('id' => '2', 'name' => 'Maintenence Service', 'service' => 'Maintenence',
               'description' => 'Check over the F22 and check oil levels, and wear on rivets, primary structure, and equipment. 43 maintenance man-hours required per flight hour.', 
-              'price' => '400000', 'quantity' => '26'),
-        array('id' => '3', 'name' => 'Air Combat Rearm Service', 'service' => 'Rearm Air',
-              'description' => 'Load up your F22 with 6 AIM 120C Missles and 480 20mm PGU-28A/B SAPHEI rounds to reach Air Combat ready status.', 
-              'price' => '2520000', 'quantity' => '20'),
+              'price' => 400000, 'quantity' => 15),
+            array('id' => '3', 'name' => 'Air Combat Rearm Service', 'service' => 'Rearm for Air Combat',
+              'description' => 'Load up your F22 with AIM 120C Missles and 20mm PGU-28A/B SAPHEI rounds to reach Combat ready status.', 
+              'price' => 2520000, 'quantity' => 20),
         array('id' => '4', 'name' => 'Ground Combat Rearm Service', 'service' => 'Rearm Ground',
               'description' => 'Load up your F22 with 2 AIM 120C Missles, 480 20mm PGU-28A/B SAPHEI rounds, and 4 JDAM\'s to reach Ground Combat ready status.', 
-              'price' => '1000000', 'quantity' => '12'),
+              'price' => 1000000, 'quantity' => 12),
         array('id' => '5', 'name' => 'Wheel Repair Service', 'service' => 'Wheel Repair',
               'description' => 'Swap the 3 old wheels out with 3 new wheels, as well as check for wear in the landing gear. Check this often to reduce the chance of landing failure.', 
-              'price' => '23000', 'quantity' => '40'),
+              'price' => 23000, 'quantity' => 40),
         array('id' => '6', 'name' => 'Replace Windshield Service', 'service' => 'Windshield Repair',
               'description' => 'Replace the glass windshield on the F-22\'s cockpit. These windshields could crack under high G manouvers.', 
-              'price' => '94000', 'quantity' => '1')
+              'price' => 94000, 'quantity' => 1)
         );
 
     // Default Constructor
