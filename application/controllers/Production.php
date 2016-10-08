@@ -6,7 +6,7 @@ class Production extends Application
 {
 
 	/**
-    * Production page
+    * Production controller
     * Show services, and for the selected one, show the supplies that go into it, 
     * flagging any that are not on hand. Log any items made, without updating inventory.
     *
