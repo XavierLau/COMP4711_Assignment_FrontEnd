@@ -18,7 +18,13 @@ class Supplies extends CI_Model {
         array('id' => '4', 'name' => 'Ammo', 'description' => '20mm PGU-28A/B SAPHEI rounds for the F-22\'s M61A2 Cannon.', 
               'price' => 250, 'quantity' => 53070, 'src' => 'assets/img/PGU-28A_1.jpg'),
         array('id' => '5', 'name' => 'Rivets', 'description' => 'Rivets for the inner frame of the F-22.', 
-              'price' => 350, 'quantity' => 542, 'src' => '')
+              'price' => 350, 'quantity' => 542, 'src' => ''),
+        array('id' => '6', 'name' => 'JDAM', 'description' => 'A cheap smart bomb for use in use in ground attacks.', 
+              'price' => 25000, 'quantity' => 756, 'src' => ''),
+        array('id' => '7', 'name' => 'Wheel', 'description' => 'Wheels for the landing gear. Essential for landing.', 
+              'price' => 2400, 'quantity' => 230, 'src' => ''),
+        array('id' => '8', 'name' => 'Windshield', 'description' => 'Specially constructed glass for the cockpit.', 
+              'price' => 80000, 'quantity' => 5, 'src' => '')
         );
 
     // Default Constructor

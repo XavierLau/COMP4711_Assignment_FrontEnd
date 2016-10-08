@@ -17,7 +17,16 @@ class Services extends CI_Model {
               'supplies' => array('Oil' => 20, 'Rivets' => 25)),
             array('id' => '3', 'name' => 'Rearm for Air Combat',
               'description' => 'Add missles and ammo to rearm. Takes 6 missles and 480 rounds of ammo.', 
-              'supplies' => array('Missles' => 6, 'Ammo' => 480))          
+              'supplies' => array('Missles' => 6, 'Ammo' => 480)),
+        array('id' => '4', 'name' => 'Rearm for Ground Combat',
+              'description' => 'Add a few missles, ammo, and some bombs to rearm. Takes 2 missles, 480 rounds of ammo, and 4 JDAM\'s.', 
+              'supplies' => array('Missles' => 2, 'Ammo' => 480, 'JDAM' => 4)),
+        array('id' => '5', 'name' => 'Wheel Repair',
+              'description' => 'Swap wheel and check landing gear. Takes 3 wheels.', 
+              'supplies' => array('Wheel' => 3)),
+        array('id' => '6', 'name' => 'Replace Windshield',
+              'description' => 'Swap the windshield, as it may be cracked by airborne materials or high G manouvers. Takes 1 Windshield', 
+              'supplies' => array('Windshield' => 1))
         );
 
     // Default Constructor
