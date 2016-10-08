@@ -11,13 +11,13 @@ class Services extends CI_Model {
     var $services = array(
         array('id' => '1', 'name' => 'Preparation',
               'description' => 'Top off plane with fuel and oil. Takes 50 gallons of fuel, and 12 gallons of oil.', 
-              'supplies' => array('Fuel' => '50', 'Oil' => '12')),
+              'supplies' => array('Fuel' => 50, 'Oil' => 12)),
             array('id' => '2', 'name' => 'Maintenence',
               'description' => 'Check oil levels and overall wear on rivets, airframe, eqiupment, engine, and plane coating. Takes 20 gallons of oil and 25 rivets.', 
-              'supplies' => array('Oil' => '20', 'Rivets' => '25')),
+              'supplies' => array('Oil' => 20, 'Rivets' => 25)),
             array('id' => '3', 'name' => 'Rearm for Air Combat',
               'description' => 'Add missles and ammo to rearm. Takes 6 missles and 480 rounds of ammo.', 
-              'supplies' => array('Missles' => '6', 'Ammo' + '480'))          
+              'supplies' => array('Missles' => 6, 'Ammo' => 480))          
         );
 
     // Default Constructor
