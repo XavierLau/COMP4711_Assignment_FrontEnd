@@ -36,8 +36,8 @@ class Receiving extends Application
 		$this->render();
 	}
 
-	//produce service
-	public function produce()
+	//receive service
+	public function receive()
 	{
 		//results returned from POST
 		$results = $this->input->post();
