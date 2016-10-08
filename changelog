@@ -21,3 +21,13 @@ October 6, 2016:
 October 7, 2016:
     - Updated Logs model with mock data and some get methods.
     - Added a couple of mock pictures to test with.
+
+October 7, 2016:
+    - Added more mock data. We now have ample amount of materials to display.
+    - Need some more pictures though...
+
+October 8, 2016:
+    - Added sales controller and a temporary page for it
+    - Removed old homepage and its controller
+    - Autoloaded the models
+    - Updated some model values
