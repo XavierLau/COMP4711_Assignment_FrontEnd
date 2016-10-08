@@ -10,15 +10,21 @@ class Supplies extends CI_Model {
     // array that holds all of the data related to supplies
     var $supplies = array(
         array('id' => '1', 'name' => 'Fuel', 'description' => 'Military Grade Fuel for the F22.', 
-              'price' => '300', 'quantity' => '20000'),
+              'price' => '300', 'quantity' => '20000', 'src' => ''),
         array('id' => '2', 'name' => 'Oil', 'description' => 'Oil lubricant to ensure mechanical parts operate smoothly.',
-              'price' => '100', 'quantity' => '14100'),
-        array('id' => '3', 'name' => 'Missles', 'description' => 'AIM 120C Missles for Air-to-Air combat.', 
-              'price' => '400000', 'quantity' => '680'),
+              'price' => '100', 'quantity' => '14100', 'src' => ''),
+        array('id' => '3', 'name' => 'Missle', 'description' => 'AIM 120C Missles for Air-to-Air combat.', 
+              'price' => '400000', 'quantity' => '680', 'src' => 'assets/img/AIM-120_1.jpg'),
         array('id' => '4', 'name' => 'Ammo', 'description' => '20mm PGU-28A/B SAPHEI rounds for the F-22\'s M61A2 Cannon.', 
-              'price' => '250', 'quantity' => '53070'),
-        array('id' => '5', 'name' => 'Rivets', 'description' => 'Rivets for the inner frame of the F-22.', 
-              'price' => '350', 'quantity' => '542')
+              'price' => '250', 'quantity' => '53070', 'src' => 'assets/img/PGU-28A_1.jpg'),
+        array('id' => '5', 'name' => 'Rivet', 'description' => 'Rivets for the inner frame of the F-22.', 
+              'price' => '350', 'quantity' => '542', 'src' => ''),
+        array('id' => '6', 'name' => 'JDAM', 'description' => 'A cheap smart bomb for use in use in ground attacks.', 
+              'price' => '25000', 'quantity' => '756', 'src' => ''),
+        array('id' => '7', 'name' => 'Wheel', 'description' => 'Wheels for the landing gear. Essential for landing.', 
+              'price' => '2400', 'quantity' => '230', 'src' => ''),
+        array('id' => '8', 'name' => 'Windshield', 'description' => 'Specially constructed glass for the cockpit.', 
+              'price' => '80000', 'quantity' => '5', 'src' => '')
         );
 
     // Default Constructor
@@ -111,16 +117,34 @@ class Supplies extends CI_Model {
         }
     }
     
-    // Set the quantity of the supply item
-    public function set_quantity($name, $quantity)
+/**
+     * Sets or modifes the quanitity of a Supply item.
+     * @param type $name The name of the Supply item
+     * @param type $mode Add, Minus, or Equal
+     * @param type $quantity Set the quantity of the Supply item
+     */
+    public function set_quantity($name, $mode, $quantity)
     {
-        // find the correct supply name, set the supply quantity
+        // find the correct supply name, set the quantity
         foreach($this->supplies as $supply)
         {
             if($supply['name'] == $name)
             {
-                $supply['quantity'] = $quantity;
+                // Add, Minus, or Equal the value to the quantity amount.
+                switch($mode)
+                {
+                    case 'add':
+                        $supply['quantity'] += $quantity;
+                        break;
+                    case 'minus':
+                        $supply['quantity'] -= $quantity;
+                        break;
+                    case 'equal':
+                        $supply['quantity'] = $quantity;
+                        break;
+                }
             }
         }
     }
+  
 }
