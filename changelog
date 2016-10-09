@@ -39,3 +39,9 @@ October 8, 2016:
     - Added receiving controller and a temporary page for it
     - Fixed some comments in production controller and sales controller
     - Added a function to the sales controller to view and individual service
+
+October 9, 2016:
+    - Added Production View
+    - Added Receiving View
+    - Fixed Production controller data duplication
+    - Released the Kraken
