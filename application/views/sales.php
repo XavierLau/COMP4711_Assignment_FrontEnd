@@ -1,4 +1,4 @@
-<form name="userinput" action="form_reader.php" method="post">
+<form>
     <body class="SalesBody">
         <h1>Item List</h2>
         <p>Input the amount of items</p> 
