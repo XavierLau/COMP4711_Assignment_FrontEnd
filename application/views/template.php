@@ -17,23 +17,42 @@ if (!defined('APPPATH'))
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
+        <script>
+        $(document).ready(function() {                
+		$(document).on('click', '#items2', function(e){
+                    var title=$(this).attr("value");
+                    var nametitle = title.substr(0, title.indexOf('=')-1);
+                    var nametitle2 = title.substr(0, title.length);
+                    var price = nametitle2.substr(0,nametitle2.indexOf('/')); 
+                    $('<div class="block">'+'<button id="item" class="btn col-xs-8 btn-info">'+nametitle+" "+ price +'</button>').appendTo('div#newitem')          
+                });
+                $(document).on('click', '#item2', function(e){
+                     $(this).closest('div.block').remove();            
+                });
+        });
+        </script>
     </head>
     <body>
         <div class="container">
-            <div class="navbar">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <a class="navbar-brand" href="#">{pagetitle}</a>
                 <div class="navbar-inner">
                     {menubar} </div>
-            </div>           
+            </nav>           
             <div id="content">
-                <h1>{pagetitle}</h1>
                 {content}
             </div>
             <div id="footer" class="span12">
-                Copyright &copy; 2016,  <a href="mailto:spanishcats@Iamafatkitty.meow">El Gato</a>.
+                Copyright &copy; 2016,  <a href="mailto:someone@somewhere.com">Team</a>.
             </div>
         </div>
         <script src="/assets/js/jquery-1.11.1.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
+       
     </body>
 </html>

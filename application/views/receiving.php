@@ -1,16 +1,23 @@
-<form class="receivingForm">
-<div class="receivingMain">
-    <h2> Receiving Items </h2>
-    {receiving}
-    <div class="supplyMain"> 
+
+<body class="probody">
+    <form>
+        <div class='row'>
+        {receiving}
         {supplies}
-        <ul>
-            {supply} : 
-            <input type="text" placeholder="Enter Recieving Amount...">
-        </ul>
+        <div class="col-xs-2">
+            <input id="items" class="form-control" value="{supply}" onfocus="this.blur()"></input>
+            <input class="form-control" id="focusedInput" type="text" placeholder="Click to set" autocomplete="off">
+        </div>
         {/supplies}
-    </div>
-    {/receiving}
-</div>
-<input type="submit" value="Submit">
-</form>
+        {services}
+        <div class="col-xs-2">
+            <input id="items" class="form-control" value="{service}" onfocus="this.blur()"></input>
+            <input class="form-control" id="focusedInput" type="text" placeholder="Click to set" autocomplete="off">
+        </div>
+        {/services}
+        {/receiving}
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</body>
+
