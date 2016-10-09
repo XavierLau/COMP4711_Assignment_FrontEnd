@@ -1,17 +1,24 @@
-
-<body class="SalesBody">
-  <h2>Item List</h2>
-  <p>select any item you want</p>
-  <div class="list-group" id="buttongroup">
-    {array}
-        <button id="{id}" type="button" class="list-group-item" value="{value}">{value}</button>    
-    {/array}    
-  </div>
-  
-  <h2>Your Shopping List</h2>
-  <ul class="list-group">
-      <div class="newitems" id="newitem"></div><br/>
-  </ul>
-  
-  
-</body>
+<form>
+    <body class="SalesBody">
+        <h1>Item List</h2>
+        <p>Input the amount of items</p> 
+        {sales}        
+        {supplies}
+        <div class="list-group" id="buttongroup">
+            <ul>    
+                
+                <div class="col-xs-4 title">
+                    <input id="items" class="form-control" value="{supply}" onfocus="this.blur()"></input>
+                    <input class="form-control" id="focusedInput" type="text" placeholder="Click to set" autocomplete="off">
+                </div>
+                
+                    <input type="text" class="col-xs-2 price" value="${price}" onfocus="this.blur()"></input>
+                    <input type="text" class="col-xs-8 desc" value="{description}" onfocus="this.blur()"></input>
+                <br/><br/><br/><br/>
+            </ul>
+        </div>
+         {/supplies}
+         {/sales}
+         <button type="submit" class="btn btn-default">Submit</button>
+    </body>
+</form>
