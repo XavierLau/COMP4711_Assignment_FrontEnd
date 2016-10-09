@@ -11,18 +11,19 @@ class Production extends Application
     * flagging any that are not on hand. Log any items made, without updating inventory.
     *
     */
-	public function index()
-	{
-		$this->data['pagebody'] = 'production';
+    public function index()
+    {
+        $this->data['pagebody'] = 'production';
         //the services
-		$services = $this->services->get_all();
+        $services = $this->services->get_all();
 
         //service information
-		$productionInformation = array();
+        $productionInformation = array();
 
         //go through all the services
-		foreach ($services as $service)
-		{
+        foreach ($services as $service)
+        {
+            $supplyInformation = array();
             //for each service
             foreach ($service['supplies'] as $supply => $quantity)
             {
@@ -37,23 +38,22 @@ class Production extends Application
                 }
             }
             $productionInformation[] = array('name' => $service['name'], 'supplyInformation' => $supplyInformation);
-		}
-		$this->data['production'] = $productionInformation;
-		$this->render();
-	}
+        }
+        $this->data['production'] = $productionInformation;
+        $this->render();
+    }
 
-	//produce service
-	public function produce()
-	{
-		//results returned from POST
-		$results = $this->input->post();
+    //produce service
+    public function produce()
+    {
+        //results returned from POST
+        $results = $this->input->post();
 
-		//go through results and add the quanity specified to the stocks
-		foreach ($results as $service)
-		{
-			$this->stocks->set_quantity($service['name'], "add", $service['quantity']);
-		}
-
-		//return message upon successful stocking
-	}
+        //go through results and add the quanity specified to the stocks
+        foreach ($results as $service)
+        {
+                $this->stocks->set_quantity($service['name'], "add", $service['quantity']);
+        }
+        //return message upon successful stocking
+    }
 }
