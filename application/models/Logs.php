@@ -10,10 +10,10 @@ class Logs extends CI_Model {
     // array that holds all of the logged data    
     var $logs = array(
         array('id' => '1', 'name' => 'Log_Transaction_Inv_1', 'type' => 'inventory', 'date' => '18/10/16',
-                  'totalprice' => '5000', 'items' => array('item1' => 'rivets', 'item2' => 'ammo'),
-              'id' => '2', 'name' => 'Log_Transaction_Sell_1', 'type' => 'sales', 'date' => '24/10/16',
-                  'totalprice' => '99999999', 'items' => array('item1' => 'Limited Edition Pikmin Lithograph'),
-              'id' => '3', 'name' => 'Log_Transaction_Prod_1', 'type' => 'production', 'date' => '20/10/16',
+                  'totalprice' => '5000', 'items' => array('item1' => 'rivets', 'item2' => 'ammo')),
+        array('id' => '2', 'name' => 'Log_Transaction_Sell_1', 'type' => 'sales', 'date' => '24/10/16',
+                  'totalprice' => '99999999', 'items' => array('item1' => 'Limited Edition Pikmin Lithograph')),
+        array('id' => '3', 'name' => 'Log_Transaction_Prod_1', 'type' => 'production', 'date' => '20/10/16',
                   'totalprice' => '666', 'items' => array('item1' => 'How to Code PHP: Webpage Hell Vol. 42'))
         );
 
