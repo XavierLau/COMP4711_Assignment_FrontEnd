@@ -6,38 +6,14 @@ body {
 	margin: 40px;
 	font: 13px/20px normal Helvetica, Arial, sans-serif;
 	color: #4F5155;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+        text-align: center;
+        text-shadow: 0 2px 2px #b6701e;
 }
 
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
-}
-
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
-}
-
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
-}
-
-#body {
-	margin: 0 15px 0 15px;
-}
 
 p.footer {
 	text-align: right;
@@ -45,11 +21,168 @@ p.footer {
 	border-top: 1px solid #D0D0D0;
 	line-height: 32px;
 	padding: 0 10px 0 10px;
-	margin: 20px 0 0 0;
+	
 }
 
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	box-shadow: 0 0 8px #D0D0D0;
+body.homecss #container {
+	
+	background: linear-gradient(
+            to right, 
+            #77a0ff 0%, 
+            #356ae8 10%, 
+            #0c52f4 90%, 
+            #001d60 100%
+        );
 }
+* {
+  box-sizing: border-box;
+}
+body.homecss html, body, section, div {
+  height: 100%;
+}
+
+
+body.homecss section {
+  width: 100%;
+}
+
+body.homecss article {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding: 1rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Pattern styles */
+body.homecss .left-half {
+  background: linear-gradient(
+            to right, 
+            #d3fff5 0%, 
+            #cffcdf 40%, 
+            #c0f7d4 90%, 
+            #b1f9cc 100%
+        );
+  float: left;
+  width: 75%;
+}
+body.homecss .right-half {
+  background: linear-gradient(
+            to right, 
+            #99fcbe 0%, 
+            #86f9b1 40%, 
+            #65f299 90%, 
+            #3ce078 100%
+        );
+  float: left;
+  width: 25%;
+}
+
+/* Table styles and Body home_pages*/
+body.homecss table{
+    font-family: 'Verdana';
+    margin: 25px 25px 25px 25px;
+    border-collapse: separate;
+    border-spacing: 3px;
+    border: 1px solid #eee;
+    box-shadow:0px 0px 20px #808080;
+    text-align:center;
+    border-radius:10px;
+}
+
+body.homecss td:hover {
+    color: #555;
+    background: linear-gradient(
+             to right, 
+             #99fcbe 0%, 
+             #86f9b1 40%, 
+             #65f299 90%, 
+             #3ce078 100%
+         );
+    text-decoration: underline;
+}
+body.homecss th, td {
+    color: #999;
+    border: 1px solid #eee;
+    padding: 12px 35px;
+    text-align: center;    
+}
+body.homecss th {
+    background: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    height : 120px;
+    text-align: center;
+}
+body.homecss tr, td {
+    transition: all 1s;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 3px 3px #808080;
+    height:50px;
+    width:50px;
+    text-align: center;
+}
+
+body.homecss .leftside{
+    width: 80px;
+}
+body.homecss .Second td, body.homecss .Second tr{
+    width:220px;
+    text-align: center;
+}
+body.homecss .Second th{
+    width:130px;
+    text-align: center;
+}
+body.homecss .leftside td:hover{
+      background: linear-gradient(
+            to right, 
+            #d3fff5 0%, 
+            #cffcdf 40%, 
+            #c0f7d4 90%, 
+            #b1f9cc 100%
+        );
+      text-align: center;
+}
+body.homecss .first td, .first tr{
+    width:220px;
+    text-align: center;
+}
+body.homecss .first td:hover{
+    background: linear-gradient(
+            to right, 
+            #d3fff5 0%, 
+            #cffcdf 40%, 
+            #c0f7d4 90%, 
+            #b1f9cc 100%
+        );
+}
+
+body.homecss .first th{
+    width:130px;
+    text-align: center;
+}
+
+/*Sales pages*/
+body.SalesBody{
+   margin-top:70px;
+   text-align: center;
+}
+body.SalesBody .list-group{
+    width:300px;
+    margin: 0 auto; 
+    text-align: center;
+}
+body.SalesBody button{
+    text-align: center;
+}
+
