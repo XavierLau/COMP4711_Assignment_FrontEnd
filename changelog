@@ -45,3 +45,7 @@ October 9, 2016:
     - Added Receiving View
     - Fixed Production controller data duplication
     - Released the Kraken
+
+October 9, 2016:
+    - Added Homepage View
+    - Added Logging controller
