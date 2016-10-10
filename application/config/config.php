@@ -1,6 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+// the menu basics (text navbar)
+$config['menu_choices'] = array(
+    'menudata' => array(
+        array('name' => 'Homepage', 'link' => '/'),
+        array('name' => 'Sales', 'link' => '/sales'),
+        array('name' => 'Production', 'link' => '/production'),
+        array('name' => 'Receiving', 'link' => '/receiving')
+        )
+    );
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -511,3 +521,5 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+

@@ -1,0 +1,53 @@
+# F-22 Service Catalouge: for all your Warmongering needs!
+#
+# Created by Jeremy Yang, Connor Phalen, Xavier Lau,and Chiseong Oh.
+#
+# Use the following as an example for future entries:
+#
+#       December 23, 2088:
+#           - Added a note from the future.
+#           - Etc.
+#
+
+October 6, 2016:
+    - Added Models for Services, Supplies, and Stock.
+    - Added very rough Transaction Log.
+    - Added the glorious changelog!
+
+October 6, 2016:
+    - Added Getter and Setter methods to the models.
+    - Experimental Setter in Stock model. Discuss with rest of group.
+
+October 7, 2016:
+    - Updated Logs model with mock data and some get methods.
+    - Added a couple of mock pictures to test with.
+
+October 7, 2016:
+    - Added more mock data. We now have ample amount of materials to display.
+    - Need some more pictures though...
+
+October 8, 2016:
+    - Added sales controller and a temporary page for it
+    - Removed old homepage and its controller
+    - Autoloaded the models
+    - Updated some model values
+
+October 8, 2016:
+    - Added production controller and a temporary page for it
+
+October 8, 2016:
+    - Added receiving controller and a temporary page for it
+    - Fixed some comments in production controller and sales controller
+    - Added a function to the sales controller to view and individual service
+
+October 9, 2016:
+    - Added Production View
+    - Added Receiving View
+    - Fixed Production controller data duplication
+    - Released the Kraken
+
+October 9, 2016:
+    - Added links to item pages
+    - Fixed text shadow
+    - Added Homepage View
+    - Added Logging controller
