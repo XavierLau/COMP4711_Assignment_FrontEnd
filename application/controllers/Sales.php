@@ -36,7 +36,7 @@ class Sales extends Application
 	}
 
 	/**
-	* Display an product.
+	* Display a product.
 	* 
 	*
 	*/
