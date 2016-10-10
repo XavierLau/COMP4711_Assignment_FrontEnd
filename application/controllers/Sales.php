@@ -22,7 +22,7 @@ class Sales extends Application
 		foreach ($supplies as $supply)
 		{
 			//add supply info
-			$standalone[] = array('supply' => $supply['name'], 'description' => $supply['description'], 'price' => $supply['price']);
+			$standalone[] = array('supply' => $supply['name'], 'description' => $supply['description'], 'price' => $supply['price'], 'link' => $supply['link']);
 		}
 		//go through services
 		foreach ($stocks as $stock)
@@ -42,7 +42,7 @@ class Sales extends Application
 	*/
 	public function product($id)
 	{
-		$this->data['pagebody'] = 'product';
+		$this->data['pagebody'] = 'item';
 		$product = $this->supplies->get_one($id);
 		$this->data = array_merge($this->data, $product);
 		$this->render();
@@ -55,7 +55,7 @@ class Sales extends Application
 	*/
 	public function service($id)
 	{
-		$this->data['pagebody'] = 'service';
+		$this->data['pagebody'] = 'item';
 		$services = $this->services->get_one($id);
 		$this->data = array_merge($this->data, $services);
 		$this->render();

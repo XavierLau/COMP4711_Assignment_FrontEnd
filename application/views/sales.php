@@ -5,13 +5,11 @@
         {sales}        
         {supplies}
         <div class="list-group" id="buttongroup">
-            <ul>    
-                
+            <ul>
                 <div class="col-xs-4 title">
-                    <input id="items" class="form-control" value="{supply}" onfocus="this.blur()"></input>
+                    <a href="{link}">{supply}</a>
                     <input class="form-control" id="focusedInput" type="text" placeholder="Click to set" autocomplete="off">
                 </div>
-                
                     <input type="text" class="col-xs-2 price" value="${price}" onfocus="this.blur()"></input>
                     <input type="text" class="col-xs-8 desc" value="{description}" onfocus="this.blur()"></input>
                 <br/><br/><br/><br/>
