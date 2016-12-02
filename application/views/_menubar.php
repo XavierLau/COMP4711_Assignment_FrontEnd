@@ -1,5 +1,5 @@
-<ul class="nav">
+<ul class="nav navbar-nav">
     {menudata}
-    <li><a href="{link}">{name}</a></li>
+    <li><a id="nav-button" href="{link}">{name}</a></li>
     {/menudata}
 </ul>
