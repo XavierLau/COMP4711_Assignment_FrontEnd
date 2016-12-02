@@ -38,10 +38,6 @@ body.homecss #container {
 * {
   box-sizing: border-box;
 }
-body.homecss html, body, section, div {
-  height: 100%;
-}
-
 
 body.homecss section {
   width: 100%;
