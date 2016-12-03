@@ -1,22 +1,28 @@
-<form class="productionForm">
-<body class="productionMain">
+<body id="production" class="probody">
+    <h2>Produce Services</h2>
+    <hr>
     {production}
-    <div class="serviceMain">         
-        <div class="col-xs-3 title">
-            <input id="items" class="form-control" value="{name}" onfocus="this.blur()"></input>
-            <input class="form-control" id="focusedInput" type="text" placeholder="Click to set" autocomplete="off">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-5 production-item">
+                <input id="item-name" class="form-control" value="{name}" onfocus="this.blur()"></input>
+                <input id="focusedInput" class="form-control" type="number" min="0" placeholder="Enter Value" autocomplete="off">
+            </div>
+            <div class="col-md-7">
+                {supplyInformation}
+                <div class="col-md-4">
+                    <p id="field-title">{supply}:</p>
+                </div>
+                <div class="col-md-2">
+                    <p>{quantity}</p>
+                </div>
+                <div class="col-md-6">
+                    <p>({availability})</p>
+                </div>
+                {/supplyInformation}
+            </div>
         </div>
-        {supplyInformation}
-        <div class="col-xs-3">
-            <input type="text" id="items" value="{supply}" onfocus="this.blur()"></input>
-            <input type="text" id="items" value="{quantity} {availability}" onfocus="this.blur()"></input>
-        </div>
-        {/supplyInformation}
-        
     </div>
-    <br/><br/><br/><br/>
     {/production}
-    <button type="submit" class="btn btn-default submits">Submit</button>
+    <button type="submit" class="btn btn-primary pull-right">Submit</button>
 </body>
-
-</form>
