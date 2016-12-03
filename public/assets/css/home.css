@@ -1,8 +1,3 @@
-#home h2 {
-    font-weight: bold;
-    text-align: left;
-}
-
 #home, #home p {
     font-size: 15px;
 }
@@ -10,6 +5,7 @@
 #home .jumbotron {
     padding: 30px;
     text-align: center;
+    background-color: #eee;
 }
 
 #home #field-title {

@@ -1,4 +1,4 @@
-<div id="home">
+<body id="home">
     <h2>Transaction Summary</h2>
     <hr>
     <div id="home-content">
@@ -73,4 +73,4 @@
             {/log}
         </div>
     </div>
-</div>
+</body>

@@ -1,0 +1,12 @@
+#item {
+    font-size: 15px;
+}
+
+#item #field-title {
+    font-weight: bold;
+    text-align: right;
+}
+
+#item p:not(#field-title) {
+    text-align: left;
+}
