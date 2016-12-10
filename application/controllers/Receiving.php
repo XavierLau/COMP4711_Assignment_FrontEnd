@@ -16,7 +16,7 @@ class Receiving extends Application
 		$this->data['pagebody'] = 'receiving';
         //
 		$services = $this->services->get_all();
-        $supplies = $this->supplies->get_all();
+                $supplies = $this->supplies->get_all();
 
         //go through supplies
 		foreach ($supplies as $supply)
