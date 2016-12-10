@@ -16,8 +16,11 @@ if (!defined('APPPATH'))
         <title>{pagetitle}</title>
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="/assets/css/home.css"/>
+        <link rel="stylesheet" type="text/css" href="/assets/css/item.css"/>
+        <link rel="stylesheet" type="text/css" href="/assets/css/production.css"/>
+        <link rel="stylesheet" type="text/css" href="/assets/css/receiving.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -38,21 +41,27 @@ if (!defined('APPPATH'))
         </script>
     </head>
     <body>
-        <div class="container">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <a class="navbar-brand" href="#">{pagetitle}</a>
-                <div class="navbar-inner">
-                    {menubar} </div>
-            </nav>           
-            <div id="content">
-                {content}
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">{pagetitle}</a>
+                </div>
+                <div id="navbar-content" class="navbar-collapse collapse">
+                    {menubar}
+                </div>
             </div>
-            <div id="footer" class="span12">
-                Copyright &copy; 2016,  <a href="mailto:someone@somewhere.com">Team</a>.
-            </div>
+        </nav>  
+        <div id="content" class="container">
+            {content}
         </div>
-        <script src="/assets/js/jquery-1.11.1.min.js"></script>
-        <script src="/assets/js/bootstrap.min.js"></script>
-       
+        <div id="footer" class="span12">
+            Copyright &copy; 2016,  <a href="mailto:someone@somewhere.com">The Dream Team</a>.
+        </div>
     </body>
 </html>

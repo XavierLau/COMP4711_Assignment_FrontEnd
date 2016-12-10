@@ -1,0 +1,27 @@
+#home, #home p {
+    font-size: 15px;
+}
+
+#home .jumbotron {
+    padding: 30px;
+    text-align: center;
+    background-color: #eee;
+}
+
+#home #field-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#home .item-list {
+    text-align: left;
+}
+
+#home #transaction-titles, #home #transaction-data {
+    border-bottom: 1px #555 solid;
+}
+
+#home #transaction-titles p, #home #transaction-data p, #home #transaction-data ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
