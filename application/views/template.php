@@ -54,6 +54,7 @@ if (!defined('APPPATH'))
                 </div>
                 <div id="navbar-content" class="navbar-collapse collapse">
                     {menubar}
+                <p class="navbar-text navbar-right">Role: {userrole}</p>
                 </div>
             </div>
         </nav>  
@@ -61,7 +62,7 @@ if (!defined('APPPATH'))
             {content}
         </div>
         <div id="footer" class="span12">
-            Copyright &copy; 2016,  <a href="mailto:someone@somewhere.com">The Dream Team</a>.
+            Copyright &copy; 2016,  <a href="mailto:someone@somewhere.com">Someone</a>.
         </div>
     </body>
 </html>
